@@ -4,26 +4,19 @@ public class Product {
     private String id;
     private String productName;
     private String idCategory;
-    private String desc;
     private int price;
-    private int qty;
 
-    public Product(String id, String productName, String idCategory, String desc, int price, int qty) {
+    public Product(){
+
+    }
+
+    public Product(String id, String productName, String idCategory, int price) {
         this.id = id;
         this.productName = productName;
         this.idCategory = idCategory;
-        this.desc = desc;
         this.price = price;
-        this.qty = qty;
     }
 
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
 
     public int getPrice() {
         return price;
@@ -31,14 +24,6 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
-    }
-
-    public int getQty() {
-        return qty;
-    }
-
-    public void setQty(int qty) {
-        this.qty = qty;
     }
 
     public String getId() {
